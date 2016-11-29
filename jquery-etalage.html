@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="http://lib.store.yahoo.net/lib/entirelypets/etalage_mod.css">
+    <script type="text/javascript" charset="utf-8" async="async" data-requirecontext="_" data-requiremodule="jquery.core" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.3/jquery.min.js"></script>
+
+    <script type="text/javascript" src="http://lib.store.yahoo.net/lib/entirelypets/jquery.etalage.min.js"></script>
+    <script type="text/javascript">
+        jQuery(document).ready(function () {
+            jQuery('#etalage').etalage({
+                thumb_image_width: 380,
+                thumb_image_height: 380,
+                source_image_width: 1000,
+                source_image_height: 1000,
+                zoom_area_width: 370,
+                zoom_area_height: 370,
+                zoom_area_distance: 5,
+                small_thumbs: 7,
+                smallthumb_inactive_opacity: 0.7,
+                smallthumbs_position: 'left',
+                smallthumb_select_on_hover: true,
+                show_icon: true,
+                autoplay: false,
+                keyboard: false,
+                zoom_easing: true
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <ul id="etalage">
+        <li>
+            <!-- This is the large (zoomed) image source: -->
+            <img class="etalage_source_image" src="http://ep.yimg.com/ay/entirelypets/3-pack-dasuquin-for-small-to-medium-dogs-450-tabs-23.jpg" title="Optionally, your description goes here." />
+
+            <!-- This is the thumb image source (if not provided, it will use the large image source and resize it): -->
+            <img class="etalage_thumb_image" src="http://ep.yimg.com/ay/entirelypets/3-pack-dasuquin-for-small-to-medium-dogs-450-tabs-22.jpg" />
+        </li>
+    </ul>
+</body>
+
+</html>
